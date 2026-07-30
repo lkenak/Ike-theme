@@ -41,7 +41,7 @@ export default {
 	"window-effect-color"           : "#ffffff00",
 	"window-effect-material"        : "none",
 	"turnoff-audio-ingame"          : true,
-	"disable-theme-audio"           : false,
+	"disable-theme-audio"           : true,
 
 	"prevent-manual-update"	        : false,
 	"holiday-message"               : true,
@@ -69,8 +69,10 @@ export default {
 	"Custom-Font-Local"             : true,
 	"Custom-Font-Google"            : false,
 	"Google-Font-Url"               : "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
-	"CurrentFont"                   : "elaina-herculanum_roman.ttf",
+	"CurrentFont"                   : "SpaceGrotesk.ttf",
 	"Font-list": [
+		"SpaceGrotesk.ttf",
+		"Inter.ttf",
 		"aegirseaborn.ttf",
 		"elaina-herculanum_roman.ttf",
 		"minecraftregular-bmg3.otf",
