@@ -16,7 +16,12 @@ export async function customAssetsSection(): Promise<HTMLElement> {
         })
     }
 
+    const bannerDropdownRow = UI.createRow("Custom-banner-dropdown-row", [
+        createBannerDropdown()
+    ])
+
     return UI.createSection("theme-settings-custom-assets", await getString("theme-settings.settings-section-custom-assets"), [
+        await UI.createAssetFolderRow("assets/icon", "icon-folder-row"),
         UI.createCheckBox(
             await getString("theme-settings.sync-user-icons"), 'syncusericons', 'syncusericonsbox', () => {
                 restartAfterChange('syncusericons', "sync-user-icons")
@@ -60,7 +65,10 @@ export async function customAssetsSection(): Promise<HTMLElement> {
             ),
             br(),
             UI.createRow("Custom-banner-row", [
-                createBannerDropdown()
+                await UI.createAssetFolderRow("assets/icon/regalia-banners", "banner-folder-row", () => {
+                    bannerDropdownRow.replaceChildren(createBannerDropdown());
+                }),
+                bannerDropdownRow,
             ]),
             UI.createCheckBox(
                 `${await getString("theme-settings.custom-hover-card-backdrop")}`, 'cushvbdrop', 'cushvbdropbox',
@@ -137,6 +145,7 @@ export async function customAssetsSection(): Promise<HTMLElement> {
                 restartAfterChange('rsbg', "Runes-BG")
             }, true, "Runes-BG"
         ),
+        await UI.createAssetFolderRow("assets/backgrounds/runes", "runes-folder-row"),
         br(),
         UI.createCheckBox(
             await getString("theme-settings.custom-champs-image"), 'cuschampimg', 'cuschampimgbox',
@@ -144,5 +153,6 @@ export async function customAssetsSection(): Promise<HTMLElement> {
                 restartAfterChange('cuschampimg', "custom-champs-image")
             }, true, "custom-champs-image"
         ),
+        await UI.createAssetFolderRow("assets/champs", "champs-folder-row"),
     ])
 }

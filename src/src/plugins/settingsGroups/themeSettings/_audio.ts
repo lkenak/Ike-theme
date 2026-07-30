@@ -8,6 +8,7 @@ export async function audioSection(): Promise<HTMLElement> {
     const br = () => document.createElement("br")
 
     return UI.createSection("theme-settings-audio", await getString("theme-settings.settings-section-audio"), [
+        await UI.createAssetFolderRow("assets/backgrounds/audio", "audio-folder-row"),
         UI.createSlider(
             await getString("theme-settings.music-volume"), ElainaData.get("audio-volume") * 100,
             (value) => {

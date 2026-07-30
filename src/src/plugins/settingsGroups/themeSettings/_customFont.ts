@@ -63,8 +63,14 @@ export async function customFontSection(): Promise<HTMLElement[]> {
     googleFontInput.searchbox.placeholder = "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 
     // Tạo các row cho local/google font
-    const localFontRow = UI.createRow("custom-font-local-row", [
+    const fontDropdownRow = UI.createRow("custom-font-dropdown-row", [
         createFontDropdown(),
+    ]);
+    const localFontRow = UI.createRow("custom-font-local-row", [
+        await UI.createAssetFolderRow("assets/fonts", "font-folder-row", () => {
+            fontDropdownRow.replaceChildren(createFontDropdown());
+        }),
+        fontDropdownRow,
     ]);
     const googleFontRow = UI.createRow("custom-font-google-row", [
         UI.createLabel(await getString("theme-settings.google-font-url"), ""),

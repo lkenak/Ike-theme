@@ -106,7 +106,7 @@ export async function wallpaperSection(): Promise<HTMLElement> {
     const br = () => document.createElement("br")
 
     return UI.createSection("theme-settings-wallpaper", await getString("theme-settings.settings-section-wallpaper"), [
-        UI.createButton(await getString("theme-settings.open-background-folder"), "open-background-folder", () => { window.openPluginsFolder(`${ElainaData.get("Plugin-folder-name")}/assets/backgrounds`) }),
+        await UI.createAssetFolderRow("assets/backgrounds/wallpapers", "wallpaper-folder-row"),
         UI.createLabel(await getString("theme-settings.wallpaperaudio-timeupdate"), ""),
         UI.createSearchBox("WallpaperAudio-timeUpdate"),
         br(),

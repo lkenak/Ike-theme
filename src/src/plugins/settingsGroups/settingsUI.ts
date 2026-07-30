@@ -1,6 +1,40 @@
 import { datapath } from "../settings.ts"
+import { getThemeName } from "../../otherThings.ts"
 
 class ui {
+    /**
+     * Tạo một hàng gồm nút mở thư mục asset và nút làm mới danh sách
+     * @param folderPath Đường dẫn thư mục bên trong plugin (ví dụ: "assets/backgrounds/wallpapers")
+     * @param id Id của hàng
+     * @param onRefresh Hàm sẽ gọi sau khi danh sách được làm mới (để cập nhật UI đang mở)
+     */
+    createAssetFolderRow = async (folderPath: string, id: string, onRefresh?: () => void | Promise<void>) => {
+        const row = this.createRow(id, [], true)
+        row.style.cssText = "display: flex; gap: 8px; margin-bottom: 12px;"
+
+        row.appendChild(this.createButton(
+            `📂 ${await getString("theme-settings.open-folder")}`,
+            "Elaina-theme-template-class",
+            () => { window.openPluginsFolder(`${getThemeName()}/${folderPath}`) },
+            `${id}-open`
+        ))
+
+        if (window.isContextFSExist) {
+            row.appendChild(this.createButton(
+                `🔄 ${await getString("theme-settings.refresh-list")}`,
+                "Elaina-theme-template-class",
+                async () => {
+                    await window.refreshLists()
+                    await onRefresh?.()
+                    window.Toast.success(await getString("theme-settings.list-refreshed"))
+                },
+                `${id}-refresh`
+            ))
+        }
+
+        return row
+    }
+
     /**
      * @param text Dòng text hiển thị bên dưới icon Loading
      */
