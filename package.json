@@ -1,10 +1,10 @@
 {
-    "pluginName"  : "Elaina Theme",
-    "folderName"  : "elaina-theme",
-    "description" : "Elaina theme for Pengu Loader",
+    "pluginName"  : "Ike Theme",
+    "folderName"  : "ike-theme",
+    "description" : "Ike theme for Pengu Loader, based on Elaina theme by Elaina Da Catto",
     "author": {
-        "name"  : "Elaina Da Catto",
-        "github": "Elaina69"
+        "name"  : "Ike",
+        "github": "tfezduayhd"
     },
     "config": {
         "pluginsPath": "../@Elaina-Plugins"
