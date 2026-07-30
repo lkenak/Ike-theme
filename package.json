@@ -4,7 +4,7 @@
     "description" : "Ike theme for Pengu Loader, based on Elaina theme by Elaina Da Catto",
     "author": {
         "name"  : "Ike",
-        "github": "tfezduayhd"
+        "github": "lkenak"
     },
     "config": {
         "pluginsPath": "../@Elaina-Plugins"
