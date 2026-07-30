@@ -1,5 +1,2 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-pnpm run lint
-pnpm run wiki:check
+npm run lint
+npm run wiki:check
