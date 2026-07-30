@@ -1,5 +1,5 @@
 div[data-screen-name="rcp-fe-lol-navigation-screen"] {
-    border-top: 1.8px solid #785a28 !important;
+    border-top: 1.8px solid var(--ike-accent-dim) !important;
 }
 
 .rcp-fe-lol-navigation.main-nav-bar {
@@ -26,7 +26,7 @@ div[data-screen-name="rcp-fe-lol-navigation-screen"] {
     cursor: pointer;
     pointer-events: auto;
     position: relative;
-    --disabled-color: #f0e6d280;
+    --disabled-color: rgba(233, 238, 247, 0.5);
     justify-content: center;
     display: flex;
 	transition: transform 0.5s ease 0s;

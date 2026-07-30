@@ -17,8 +17,8 @@
 	position: absolute;
     width: 0%;
     border-radius: 5px;
-    background: #b6b763;
-    border-right: olive;
+    background: var(--ike-accent);
+    border-right: 1px solid var(--ike-accent-strong);
 	height: 3px;
 	left: -4px;
 }
@@ -32,7 +32,7 @@
 }
 
 .time-display {
-    color: #cdbe91;
+    color: var(--ike-accent-strong);
     font-size: 12px;
     margin-bottom: 2px;
     opacity: 0.7;
@@ -50,7 +50,10 @@
     display: none;
     width: 38px;
     height: 150px;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--ike-surface-strong);
+    -webkit-backdrop-filter: blur(var(--ike-blur));
+    backdrop-filter: blur(var(--ike-blur));
+    border: 1px solid var(--ike-glass-border);
     border-radius: 10px;
     padding: 5px;
     box-sizing: border-box;
@@ -73,7 +76,7 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background: #cdbe91;
+    background: var(--ike-accent-strong);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -146,7 +149,7 @@
 }
 
 #audio-name {
-	color: #cdbe91 !important;
+	color: var(--ike-accent-strong) !important;
     font-family: var(--font-family, var(--font-display));
     margin: 0px;
     font-size: 14px;
@@ -155,10 +158,10 @@
 
 #next-audio {
 	position: relative !important;
-    border: 2px solid #8c8263 !important;
+    border: 1px solid var(--ike-glass-border) !important;
     border-radius: 50% !important;
     width: 21px !important;
-    background-color: black !important;
+    background-color: var(--ike-surface-strong) !important;
     height: 21px !important;
     cursor: pointer;
 	left: 8px;
@@ -172,15 +175,15 @@
 }
 
 #next-audio:hover {
-	filter: brightness(1.3) hue-rotate(263deg) saturate(0.4) !important;
+	filter: brightness(1.2) drop-shadow(0 0 4px var(--ike-accent)) !important;
 }
 
 #prev-audio {
     position: relative !important;
-    border: 2px solid #8c8263 !important;
+    border: 1px solid var(--ike-glass-border) !important;
     border-radius: 50% !important;
     width: 21px !important;
-    background-color: black !important;
+    background-color: var(--ike-surface-strong) !important;
     height: 21px !important;
     cursor: pointer;
 }
@@ -193,15 +196,15 @@
 }
 
 #prev-audio:hover {
-	filter: brightness(1.3) hue-rotate(263deg) saturate(0.4) !important;
+	filter: brightness(1.2) drop-shadow(0 0 4px var(--ike-accent)) !important;
 }
 
 #pause-audio {
     position: relative !important;
-    border: 2px solid #8c8263 !important;
+    border: 1px solid var(--ike-glass-border) !important;
     border-radius: 50% !important;
     width: 21px !important;
-    background-color: black !important;
+    background-color: var(--ike-surface-strong) !important;
     height: 21px !important;
     cursor: pointer;
 	left: 4px;
@@ -215,14 +218,14 @@
 }
 
 #pause-audio:hover {
-	filter: brightness(1.3) hue-rotate(263deg) saturate(0.4) !important;
+	filter: brightness(1.2) drop-shadow(0 0 4px var(--ike-accent)) !important;
 }
 
 #mute-audio {
-    border: 2px solid #8c8263 !important;
+    border: 1px solid var(--ike-glass-border) !important;
     border-radius: 50% !important;
     width: 21px !important;
-    background-color: black !important;
+    background-color: var(--ike-surface-strong) !important;
     height: 21px !important;
     cursor: pointer;
 	display: block !important;
@@ -237,15 +240,15 @@
 }
 
 #mute-audio:hover {
-	filter: brightness(1.3) hue-rotate(263deg) saturate(0.4) !important;
+	filter: brightness(1.2) drop-shadow(0 0 4px var(--ike-accent)) !important;
 }
 
 #audio-loop {
     position: relative !important;
-    border: 2px solid #8c8263 !important;
+    border: 1px solid var(--ike-glass-border) !important;
     border-radius: 50% !important;
     width: 21px !important;
-    background-color: black !important;
+    background-color: var(--ike-surface-strong) !important;
     height: 21px !important;
     cursor: pointer;
 	left: 12px;
@@ -259,7 +262,7 @@
 }
 
 #audio-loop:hover {
-	filter: brightness(1.3) hue-rotate(263deg) saturate(0.4) !important;
+	filter: brightness(1.2) drop-shadow(0 0 4px var(--ike-accent)) !important;
 }
 
 
@@ -284,14 +287,14 @@
 	height: 21px !important;
 	margin-left: 7px;
     margin-top: 11px;
-	border: 2px solid #8c8263 !important;
+	border: 1px solid var(--ike-glass-border) !important;
     border-radius: 50% !important;
-    background-color: black !important;
+    background-color: var(--ike-surface-strong) !important;
     cursor: pointer;
 }
 
 #pause-bg:hover {
-	filter: brightness(1.3) hue-rotate(263deg) saturate(0.4) !important;
+	filter: brightness(1.2) drop-shadow(0 0 4px var(--ike-accent)) !important;
 }
 
 .pause-bg-icon {
@@ -317,7 +320,7 @@
 }
 
 .next-bg-icon:hover {
-	filter: hue-rotate(0deg) drop-shadow(2px 4px 6px pink) !important;
+	filter: drop-shadow(0 0 6px var(--ike-accent)) !important;
 }
 
 #prev-bg {
@@ -336,7 +339,7 @@
 }
 
 .prev-bg-icon:hover {
-	filter: hue-rotate(0deg) drop-shadow(2px 4px 6px pink) !important;
+	filter: drop-shadow(0 0 6px var(--ike-accent)) !important;
 }
 
 .webm-hidden {
@@ -358,5 +361,9 @@
 }
 
 #bgdropdown {
-	background: #0000007a
+	background: var(--ike-surface-strong);
+	-webkit-backdrop-filter: blur(var(--ike-blur));
+	backdrop-filter: blur(var(--ike-blur));
+	border: 1px solid var(--ike-glass-border);
+	border-radius: var(--ike-radius);
 }

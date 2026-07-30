@@ -1,0 +1,43 @@
+/* Ike Theme — design tokens
+   Palette : bleu nuit / orange / noir — minimalisme, glassmorphism, glows */
+
+:root {
+	/* Fonds */
+	--ike-black: #05080f;
+	--ike-bg: #0a1424;
+	--ike-bg-2: #0e1b30;
+
+	/* Surfaces en verre */
+	--ike-surface: rgba(14, 24, 43, 0.55);
+	--ike-surface-strong: rgba(9, 16, 30, 0.78);
+	--ike-glass-border: rgba(160, 190, 235, 0.14);
+	--ike-border-dim: rgba(159, 176, 201, 0.30);
+	--ike-glass-highlight: rgba(255, 255, 255, 0.06);
+	--ike-blur: 18px;
+	--ike-radius: 10px;
+
+	/* Accent orange */
+	--ike-accent: #ff7a2f;
+	--ike-accent-strong: #ff8c42;
+	--ike-accent-dim: rgba(255, 122, 47, 0.35);
+
+	/* Glows */
+	--ike-glow: 0 0 12px rgba(255, 122, 47, 0.35), 0 0 32px rgba(255, 122, 47, 0.12);
+	--ike-glow-soft: 0 0 18px rgba(255, 122, 47, 0.15);
+	--ike-text-glow: 0 0 8px rgba(255, 122, 47, 0.45);
+
+	/* Textes */
+	--ike-text: #e9eef7;
+	--ike-text-dim: #9fb0c9;
+	--ike-blue: #6fa4e8;
+}
+
+/* Carte de verre réutilisable */
+.ike-glass {
+	background: var(--ike-surface);
+	-webkit-backdrop-filter: blur(var(--ike-blur));
+	backdrop-filter: blur(var(--ike-blur));
+	border: 1px solid var(--ike-glass-border);
+	border-radius: var(--ike-radius);
+	box-shadow: inset 0 1px 0 var(--ike-glass-highlight), 0 8px 24px rgba(0, 0, 0, 0.35);
+}

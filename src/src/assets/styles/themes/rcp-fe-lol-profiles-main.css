@@ -12,7 +12,7 @@
 }
 
 .style-profile-emblem-subheader-ranked > div {
-	color: #cdbe91 !important;
+	color: var(--ike-accent-strong) !important;
 }
 
 .ranked-intro-background {

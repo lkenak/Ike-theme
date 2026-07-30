@@ -1,6 +1,6 @@
 const CONSOLE_STYLE = {
     prefix: '%c Elaina ',
-    css: 'color: #ffffff; background-color: #f77fbe',
+    css: 'color: #ffffff; background-color: #ff7a2f',
 };
 
 const createLogger = (type: 'log' | 'warn' | 'error') => {

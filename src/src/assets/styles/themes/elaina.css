@@ -1,7 +1,6 @@
-/* By Elaina Da Catto */
-/* Meow~~~ */
+/* Ike Theme — based on Elaina theme by Elaina Da Catto */
 
-/* test */
+@import url("./ike-tokens.css");
 @import url("./rcp-fe-lol-activity-center.css");
 @import url("./rcp-fe-lol-clash-full.css");
 @import url("./rcp-fe-lol-event-hub.css");
@@ -95,16 +94,16 @@ div > div > .rcp-fe-lol-tft-application-background {
 }
 
 .menu-item-icon {
-	background-color: #fff1f1 !important;
-	color: #fff1f1 !important;
+	background-color: var(--ike-text) !important;
+	color: var(--ike-text) !important;
 }
 
 .main-navigation-menu .section .section-text {
-	color: #fff1f1 !important;
+	color: var(--ike-text) !important;
 }
 
 .challenge-banner-title-container {
-	color: #f3d3d3 !important;
+	color: var(--ike-text) !important;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
 }
 

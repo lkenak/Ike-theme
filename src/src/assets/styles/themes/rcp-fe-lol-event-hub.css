@@ -15,7 +15,7 @@
 
 .eh-page-header-token-balance {
 	border-radius: 10px;
-    border: 2px solid var(--default-color, #cdbe91) !important;
+    border: 2px solid var(--default-color, var(--ike-accent-strong)) !important;
 	background: #000000a6;
 	padding: 10px;
     width: 160px;

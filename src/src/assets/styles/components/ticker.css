@@ -7,7 +7,7 @@
 
 .ticker-button {
 	background-image: var(--Ticker) !important;
-    border: 2px solid var(--default-color, #e0a9d9) !important;
+    border: 2px solid var(--default-color, var(--ike-accent)) !important;
     padding: 2px !important;
     border-radius: 50px !important;
 }

@@ -7,17 +7,17 @@
 	100% {
 		right: 221px; 
 		background-color: rgb(19, 15, 15); 
-		border: 2px solid #8c8263;}
+		border: 2px solid var(--ike-border-dim);}
 }
 
 @keyframes answer {
 	0% {color: transparent;}
-	100% {color: #cdbe91;}
+	100% {color: var(--ike-accent-strong);}
 }
 
 .watermark {
 	margin: 4px !important;
-	color: #cdbe91 !important;
+	color: var(--ike-accent-strong) !important;
 	font-family: var(--font-family, var(--font-display));
 	font-size: 18px !important;
 	transition: opacity 0.5s ease 0s, transform 0.5s ease 0s;

@@ -13,8 +13,7 @@ import "./src/languages.ts";
 import { log } from './src/utils/themeLog.ts';
 import { initThemeName } from './src/otherThings.ts';
 
-log('By %cElaina Da Catto', 'color: #e4c2b3');
-log('%cMeow ~~~', 'color: #e4c2b3');
+log('Ike Theme — based on Elaina theme by %cElaina Da Catto', 'color: #ff7a2f');
 log('Importing theme contents');
 
 // Import server-side backup/restore data service

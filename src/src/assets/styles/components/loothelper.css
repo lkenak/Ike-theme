@@ -139,7 +139,7 @@
 .loot-context-menu .context-menu-header .title h5,
 .loot-context-menu .context-menu-item .action-name,
 .loot-context-menu .context-menu-item .essence-text {
-    color: #f0e6d2;
+    color: var(--ike-text);
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
@@ -162,7 +162,7 @@
 
 .loot-context-menu .context-menu-header,
 .loot-context-menu .context-menu-item {
-    color: #a09b8c;
+    color: var(--ike-text-dim);
     font-size: 12px;
     font-weight: normal;
     line-height: 16px;
@@ -194,7 +194,7 @@
     box-shadow: 0 0 1px #000, 0 0 1px #000;
     border-width: 2px;
     border-style: solid;
-    border-image: linear-gradient(to bottom, #463714, #785a28) 1;
+    border-image: linear-gradient(to bottom, var(--ike-accent-dim), var(--ike-accent-dim)) 1;
     /* context-menu-item */
 }
 
@@ -232,7 +232,7 @@
     float: right;
     font-size: 13px;
     color: #afaa9a;
-    border: #463714 2px solid;
+    border: var(--ike-accent-dim) 2px solid;
     padding: 6px 12px;
     margin: -2px -2px 0 15px;
     white-space: nowrap;
@@ -260,7 +260,7 @@
 .loot-context-menu .context-menu-header .separator {
     border: 0;
     height: 1px;
-    background-color: #463714;
+    background-color: var(--ike-accent-dim);
     /* negate padding, extend to edges */
     margin: 5px 0 0 -10px;
 }
@@ -281,7 +281,7 @@
     padding: 0 10px;
     border: none;
     background: none;
-    color: #cdbe91;
+    color: var(--ike-accent-strong);
     white-space: nowrap;
     overflow: visible;
     text-overflow: ellipsis;
@@ -310,7 +310,7 @@
 }
 
 .loot-context-menu .context-menu-item .action-name {
-    color: #cdbe91;
+    color: var(--ike-accent-strong);
     line-height: 40px;
 }
 
@@ -351,7 +351,7 @@
 }
 
 .loot-context-menu .context-menu-item .essence-text {
-    color: #a09b8c;
+    color: var(--ike-text-dim);
     line-height: 40px;
 }
 
@@ -385,13 +385,13 @@
 
 .loot-context-menu .context-menu-item:not(.disabled):hover {
     background: #1e2328;
-    color: #f0e6d2;
+    color: var(--ike-text);
     cursor: pointer;
 }
 
 .loot-context-menu .context-menu-item:not(.disabled):hover .action-name,
 .loot-context-menu .context-menu-item:not(.disabled):hover .essence-text {
-    color: #f0e6d2;
+    color: var(--ike-text);
 }
 
 .loot-context-menu .context-menu-item:not(.disabled):hover .action-icon {
@@ -400,7 +400,7 @@
 }
 
 .loot-context-menu .context-menu-item:active {
-    color: #cdbe91;
+    color: var(--ike-accent-strong);
 }
 
 .loot-context-menu:focus {

@@ -14,7 +14,7 @@
 	font-kerning: normal;
     letter-spacing: .025em;
     line-height: 16px;
-	color: #a09b8c;
+	color: var(--ike-text-dim);
 	-webkit-font-smoothing: subpixel-antialiased;
     -webkit-font-feature-settings: "kern" 1;
     -webkit-user-select: none;

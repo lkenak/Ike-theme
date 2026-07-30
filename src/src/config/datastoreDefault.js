@@ -79,9 +79,9 @@ export default {
 		"roboto-medium.ttf"
 	],
 	"change-nickname-color"         : true,
-	"nickname-color"                : "#f2c1d0",
+	"nickname-color"                : "#ff7a2f",
 	"nickname-opacity"              : "ff",
-	"nickname-color-with-opacity"   : "#f2c1d0ff",
+	"nickname-color-with-opacity"   : "#ff7a2fff",
 	"animate-loading"               : false,
 	"Custom-Icon"					: true,
 	"Custom-Loading-Icon"			: true,

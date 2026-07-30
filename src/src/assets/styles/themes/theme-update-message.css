@@ -5,7 +5,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 2px solid #cdbe91;
+    border: 2px solid var(--ike-accent-strong);
     border-radius: 50%;
 	cursor: pointer;
 	background: #000000;
@@ -28,7 +28,7 @@
     height: 85px;
     width: 325px;
     border: 2px solid transparent;
-    border-image: linear-gradient(to top, #695625 0%, #a9852d 23%, #b88d35 93%, #c8aa6e 100%) 1;
+    border-image: linear-gradient(to top, #695625 0%, #a9852d 23%, #b88d35 93%, var(--ike-accent) 100%) 1;
 	background: rgb(0 0 0 / 64%);
 }
 
@@ -83,7 +83,7 @@
     bottom: 360px;
     right: 345px;
     position: absolute;
-	border: 3px solid #cdbe91;
+	border: 3px solid var(--ike-accent-strong);
 	border-radius: 50%;
 	width: 25px;
     height: 25px;

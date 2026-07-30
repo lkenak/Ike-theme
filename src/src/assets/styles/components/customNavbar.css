@@ -3,7 +3,7 @@ div[data-screen-name="rcp-fe-lol-home"] .rcp-fe-lol-home-sub-nav {
     padding-bottom: 10px;
     background-color: #000000ad;
     border-radius: 10px;
-    border: 2px solid var(--default-color, #cdbe91) !important;
+    border: 2px solid var(--default-color, var(--ike-accent-strong)) !important;
 }
 
 div[data-screen-name="rcp-fe-lol-tft"] .tft-sub-nav-container {
@@ -11,5 +11,5 @@ div[data-screen-name="rcp-fe-lol-tft"] .tft-sub-nav-container {
     padding-bottom: 10px !important;
     background-color: #000000ad !important;
     border-radius: 10px !important;
-    border: 2px solid var(--default-color, #cdbe91) !important;
+    border: 2px solid var(--default-color, var(--ike-accent-strong)) !important;
 }
