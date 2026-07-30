@@ -5,7 +5,7 @@ export default {
     "Loading"       : "loading.gif",
     "Static-logo"   : "logo.png",
 
-    "Avatar"        : "avatar.gif",
+    "Avatar"        : "avatar.png",
 
     "Border"        : "border.png",
 
